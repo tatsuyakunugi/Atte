@@ -1,0 +1,74 @@
+.user__content {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1230px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.select__year,
+.select__month,
+.select__day {
+    margin-right: 10px;
+    padding: 5px 10px;
+    height: 35px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+p {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-form__button {
+    padding: 5px 10px;
+    height: 35px;
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0000ff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.user-table {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-table__date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-table__inner {
+    width: 100%;
+}
+
+.user-table__row {
+    width: 20%;
+    border-top: 1px solid #808080;
+}
+
+.user-table__header,
+.user-table__item {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}

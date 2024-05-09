@@ -1,0 +1,45 @@
+.users-list__content {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1230px;
+}
+
+.users-list__table {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.users-list {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.users-list__table--inner {
+    width: 100%;
+}
+
+.users-list__table--row {
+    width: 20%;
+    border-top: 1px solid #808080;
+}
+
+.users-list__table--header,
+.users-list__table--item {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.users-list__button {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #0000ff;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
