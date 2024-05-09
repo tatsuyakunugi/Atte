@@ -14,7 +14,7 @@
 
 ![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/2ce29c3d-a2db-4557-89fc-2a28305c2df8)
 ![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/860c44ba-07d9-4639-ae55-bba6c9199f96)
-![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/e467592c-c0ec-4e77-8725-98affaee7807)
+![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/7fd95147-2ccb-4db4-8aa9-8b7975fefba9)
 
 ＃＃ER図
 
