@@ -1,7 +1,5 @@
 # アプリケーション名
 
-・Atte
-
 ![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/3a09f161-ec6a-474e-a75e-1be52a2030ed)
 
 ## 作成した目的
@@ -34,7 +32,7 @@
 
 ・laravel8.83.8
 
-・MYSQL
+・MYSQL:8.0.26
 
 ## テーブル設計
 
@@ -60,7 +58,7 @@
 
 2．composer install
 
-3．.env.exampleファイルから.envを作成し、環境変数を変更
+3．cp .env.example .env（.env.exampleファイルから.envを作成し、環境変数を変更）
 
 4．php artisan key:generate
 
