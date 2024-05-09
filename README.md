@@ -1,4 +1,6 @@
-# アプリケーション名　＜Atte＞
+# アプリケーション名
+
+・Atte
 
 ![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/3a09f161-ec6a-474e-a75e-1be52a2030ed)
 
@@ -11,6 +13,20 @@
 ・phpMyAdmin http://llocalhost:8080
 
 ## 機能一覧
+
+・laravel Fortifyを利用した会員登録・ログイン・ログアウト機能
+
+・勤務は1日1回までに制御
+
+・日を跨いだ時点で翌日の出勤操作に切り替え
+
+・日を跨いでの勤務（夜勤など）にも対応
+
+・休憩は勤務中に何度でも取得可能
+
+・その日に勤務した全ユーザーの勤怠実績を閲覧可能
+
+・ユーザー一覧から個人の勤怠実績を日付検索により閲覧可能
 
 ## 使用技術
 
@@ -34,7 +50,7 @@
 
 ### Dockerビルド
 
-1．
+1．git clone git@github.com:coachtech-material/laravel-docker-template.git
 
 2．docker-compose up -d --build
 
