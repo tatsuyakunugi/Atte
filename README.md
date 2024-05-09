@@ -18,7 +18,7 @@
 
 ＃＃ER図
 
-![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/5dc0dc4b-081a-4697-ac76-77c28f7b5666)
+![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/d4cf0120-00e6-4b32-89c6-63d3b81dfcc0)
 
 ＃＃環境構築
 
