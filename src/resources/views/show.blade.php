@@ -9,9 +9,9 @@
 <div class="user__content">
     <div class="user-table">
         <div class="user-table__title">
-            <p class="user-name">
+            <h3 class="user-name">
                 {{ $user->name }}さんの勤怠記録
-            </p>
+            </h3>
         </div>
         <div class="user-table__heading">
             <form class="search-form" action="/show" method="get">
@@ -35,7 +35,7 @@
                 </select>
                 <p>日</p>
                 <input type="hidden" name="id" value="{{ $user->id }}">
-                <button class="search-form__button" name="id" value="{{ $user->id }}">選択</button>
+                <button class="search-form__button" name="id" value="{{ $user->id }}">検索</button>
             </form>
         </div>
         <table class="user-table__inner">

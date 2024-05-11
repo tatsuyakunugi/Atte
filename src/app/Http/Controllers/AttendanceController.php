@@ -31,7 +31,7 @@ class AttendanceController extends Controller
         }
 
         //サブクエリを作成
-        //**@var \Illuminate\Datebase\Query\Builder $restBuilder */
+        //**@var \Illuminate\Datebase\Query\Builder $subQuery */
         $subQuery = DB::table('rests')
                         ->select('stamp_id')
                         ->selectRaw('SUM(restTime) As sum_restTime')
@@ -48,7 +48,7 @@ class AttendanceController extends Controller
         return view('attendance', compact('today', 'yesterday', 'tomorrow', 'items'));
     }
     
-    //ユーザー一覧
+    //ユーザー一覧ページ表示
     public function getUsers()
     {
         $users = User::paginate(5);
@@ -56,7 +56,7 @@ class AttendanceController extends Controller
         return view('users-list', compact('users'));
     }
     
-    //個人ページ
+    //個人ページ表示
     public function show(Request $request)
     {
         $user = User::find($request->id);
