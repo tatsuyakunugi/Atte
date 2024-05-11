@@ -9,9 +9,9 @@
 <div class="users-list__content">
     <div class="users-list__table">
         <div class="users-list__table--title">
-            <p class="users-list">
+            <h3 class="users-list">
                 ユーザー一覧
-            </p>
+            </h3>
         </div>
         <table class="users-list__table--inner">
             <tr class="users-list__table--row">
