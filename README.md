@@ -1,30 +1,59 @@
-# アプリケーション名
+# Atte
 
 ![image](https://github.com/tatsuyakunugi/Atte/assets/143701240/3a09f161-ec6a-474e-a75e-1be52a2030ed)
 
+このアプリは勤怠管理のためのアプリになります。
+
+会員登録をすることで毎日の勤怠を記録することが出来、
+
+日付別の勤怠記録も確認できます。
+
+また、ユーザーの個人ページから日付検索をすることにより、
+
+個人の日別勤怠記録も閲覧できます。
+
 ## 作成した目的
+
+このアプリは模擬案件の課題として制作しました。
+
+与えられた要件や完成イメージ図をもとに、
+
+テーブル設計・ER図作成・コーディングを行いました。
 
 ## アプリケーションURL
 
-・開発環境 http://localhost/
+デプロイをしていないのでアプリケーションURLはありません。
 
-・phpMyAdmin http://llocalhost:8080
+##　他のリポジトリ
+
+ありません
 
 ## 機能一覧
 
-・laravel Fortifyを利用した会員登録・ログイン・ログアウト機能
+・会員登録機能（入力項目は名前、メールアドレス、パスワード、確認用パスワード）
+
+・ログイン機能（メールアドレスとパスワードで認証）
+
+・ログアウト機能
+
+・勤怠打刻機能
+　○出勤・退勤の打刻
+ 
+　○休憩開始・休憩就労の打刻
 
 ・勤務は1日1回までに制御
+
+・その日に勤務した全ユーザーの勤怠実績を閲覧可能
+
+・ユーザー一覧から個人の勤怠実績を日付検索により閲覧可能
+
+###　機能に関する注釈
 
 ・日を跨いだ時点で翌日の出勤操作に切り替え
 
 ・日を跨いでの勤務（夜勤など）にも対応
 
 ・休憩は勤務中に何度でも取得可能
-
-・その日に勤務した全ユーザーの勤怠実績を閲覧可能
-
-・ユーザー一覧から個人の勤怠実績を日付検索により閲覧可能
 
 ## 使用技術
 
@@ -60,11 +89,17 @@
 
 3．cp .env.example .env（.env.exampleファイルから.envを作成し、環境変数を変更）
 
-4．php artisan key:generate
+4．php artisan key:generatecomposer require laravel/fortify
 
-5．php artisan migrate
+5．composer require laravel/fortify
 
-6．php artisan db:seed
+6．php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
+
+7．(composer.jsonの"require"内に"laravel/tinker": "^2.5",と"nesbot/carbon": "^2.31"を追記し)composer update
+
+8．php artisan migrate
+
+9．php artisan db:seed
 
 ## その他
 
@@ -75,3 +110,12 @@
 メールアドレス：test@example.com
 
 パスワード：testpass
+
+### ダミーデータ
+
+機能確認用のデータとして
+、
+ ○20件のユーザーデイタを登録
+ 
+ ○5月10日に10件の勤怠データを登録
+ 
